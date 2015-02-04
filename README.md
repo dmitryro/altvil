@@ -81,7 +81,8 @@ To be able to use Postgis geospatial extensions for Postgres, please make sure
 the following third party software is installed on your Linux and is compliant 
 with the Fedora/Debian versions:
 
-   * dbal 
-   * jsonc
-   * geos
-   
+  * GDAL   -  http://download.osgeo.org/gdal/
+  * GEOS   -  http://download.osgeo.org/geos/
+  * PROJ   - http://download.osgeo.org/proj
+  * SFCGAL - http://download.osgeo.org/sfcgal
+ 
