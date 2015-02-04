@@ -12,6 +12,17 @@ Technologies used:
 ==================================================================================================
 
 
+==================================================================================================
+Essential third party applications
+==================================================================================================
+   * Django Rest Framework GIS - 
+     - https://github.com/djangonauts/django-rest-framework-gis
+   * Celery
+     - http://www.celeryproject.org/
+   * Django Rest Framework
+     - http://www.django-rest-framework.org/
+   * Postgis
+     - http://postgis.net/
 
 ==================================================================================================
 The demo data 
