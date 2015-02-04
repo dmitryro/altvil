@@ -86,6 +86,7 @@ INSTALLED_APPS = (
     'rules_light',
     # Custom apps
     'geography',
+    'graph',
     'gui',
 )
 
