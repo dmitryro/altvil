@@ -25,6 +25,12 @@ Essential third party applications
      - http://postgis.net/
 
 ==================================================================================================
+Models
+==================================================================================================
+We use django.contrib.gis.db for geospatial model types and Django Rest Framework GIS
+for serializing and JSON converso of those types
+
+==================================================================================================
 The demo data 
 ==================================================================================================
 The demo data used in Django Rest Framework endpoints and a sample parser 
