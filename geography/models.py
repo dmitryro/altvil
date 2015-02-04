@@ -20,7 +20,9 @@ from rest_framework import generics
 from smart_selects.db_fields import GroupedForeignKey, ChainedForeignKey
 from djangular.views.mixins import JSONResponseMixin, allow_remote_invocation
 
-
+"""
+  Service Area Model
+"""
 class ServiceArea(models.Model):
     custom_attributes = HStoreField(null=True)
     geo_attributes = HStoreField(null=True)
@@ -33,7 +35,9 @@ class ServiceArea(models.Model):
         verbose_name = 'service area'
         verbose_name_plural = 'service areas'
 
-
+"""
+  Road Segment Model
+"""
 class RoadSegment(models.Model):
     service_area_id = models.ForeignKey(ServiceArea)
     node_from_id = models.IntegerField(default=0)
@@ -48,8 +52,9 @@ class RoadSegment(models.Model):
         verbose_name = 'road segment'
         verbose_name_plural = 'road segments'
 
-
-
+"""
+  Site Model
+"""
 class Site(models.Model):
     service_area_id = models.ForeignKey(ServiceArea)
     road_segment_id = models.ForeignKey(RoadSegment,null=True)
@@ -65,7 +70,9 @@ class Site(models.Model):
         verbose_name = 'site'
         verbose_name_plural = 'sites'
 
-
+"""
+  Household Model
+"""
 class HouseHold(models.Model):
     service_area_id = models.ForeignKey(ServiceArea)
     road_segment_id = models.ForeignKey(RoadSegment,null=True)
@@ -83,22 +90,4 @@ class HouseHold(models.Model):
         verbose_name_plural = 'households'
 
 
-"""
-    ServiceArea
-"""
-class ServiceAreaList(APIView):
-    """
-    List all snippets, or create a new snippet.
-    """
-    def get(self, request, format=None):
-        serviceareas = ServiceArea.objects.all()
-        serializer = PropertySerializer(serviceareas, many=True)
-        return Response(serializer.data)
-
-    def post(self, request, format=None):
-        serializer = SnippetSerializer(data=request.DATA)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

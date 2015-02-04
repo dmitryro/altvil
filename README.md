@@ -30,6 +30,14 @@ Models
 We use django.contrib.gis.db for geospatial model types and Django Rest Framework GIS
 for serializing those types
 
+
+==================================================================================================
+Front-end technologies
+==================================================================================================
+   * Jinja2 - http://niwibe.github.io/django-jinja/
+   * AngualarJS - https://angularjs.org/
+   * Django Angular app - https://thinkster.io/django-angularjs-tutorial/
+
 ==================================================================================================
 The demo data 
 ==================================================================================================
