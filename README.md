@@ -28,7 +28,7 @@ Essential third party applications
 Models
 ==================================================================================================
 We use django.contrib.gis.db for geospatial model types and Django Rest Framework GIS
-for serializing and JSON converso of those types
+for serializing those types
 
 ==================================================================================================
 The demo data 
