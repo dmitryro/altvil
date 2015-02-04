@@ -32,7 +32,8 @@ View Live Endpoint output
       - for sites
    * http://geo.zrealtycorp.com/serviceareas
       - for service areas
-
+   * http://geo.zrealtycorp.com/results/
+      - for computational results
 ==================================================================================================
 View the relevant docs in
 ==================================================================================================

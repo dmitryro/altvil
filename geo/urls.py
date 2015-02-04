@@ -4,12 +4,14 @@ from rest_framework import viewsets, routers
 import rules_light
 import smart_selects
 from geography import views
+from graph.views import HouseholdResultViewSet
 
 router = routers.DefaultRouter()
 router.register(r'serviceareas', views.ServiceAreaViewSet)
 router.register(r'roadsegments', views.RoadSegmentViewSet)
 router.register(r'households', views.HouseHoldViewSet)
 router.register(r'sites', views.SiteViewSet)
+router.register(r'results', HouseholdResultViewSet)
 admin.autodiscover()
 
 
