@@ -23,6 +23,11 @@ Essential third party applications
      - http://www.django-rest-framework.org/
    * Postgis
      - http://postgis.net/
+==================================================================================================
+   The geo project is configured to run on postgis extension using postgis, hstore, postgis_topology.
+   Please see the geo/local_settings.py (DATABASES section) to see the exact configuration
+   Plsease refer to Postgis exvention for more info.
+==================================================================================================
 
 ==================================================================================================
 Models
