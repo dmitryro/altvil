@@ -29,7 +29,8 @@ Models
 ==================================================================================================
 We use django.contrib.gis.db for geospatial model types and Django Rest Framework GIS
 for serializing those types
-
+django-hstore is used for HStoreField  http://djangonauts.github.io/django-hstore/
+The serialization is provided by Django Rest Framework GIS
 
 ==================================================================================================
 Front-end technologies
@@ -72,3 +73,15 @@ The installation contains minimal Django setup
 needed to demonstrate Django Rest Framework API
 access
 
+=================================================================================================
+Postgis Requirements
+================================================================================================
+
+To be able to use Postgis geospatial extensions for Postgres, please make sure 
+the following third party software is installed on your Linux and is compliant 
+with the Fedora/Debian versions:
+
+   * dbal 
+   * jsonc
+   * geos
+   
