@@ -43,8 +43,14 @@ Front-end technologies
 The demo data 
 ==================================================================================================
 The demo data used in Django Rest Framework endpoints and a sample parser 
-are available at excel directory
+are available at excel directory. This data is currently displayed through the endpoints listed
+below.
 
+==================================================================================================
+Algorithms for graph traversal and vertex counting
+==================================================================================================
+Please refer to the Algorithm.pdf document in the docs directory. Some basic logic for Kruskal
+and A* provided in graph/graph.py and graph/kruskal.py. The pseudocode is included.
 
 
 
