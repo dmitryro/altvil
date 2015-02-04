@@ -101,4 +101,19 @@ with the Fedora/Debian versions:
   * GEOS   - http://download.osgeo.org/geos/
   * PROJ   - http://trac.osgeo.org/proj/
   * SFCGAL - http://oslandia.github.io/SFCGAL/
+
+==================================================================================================
+Deployment Requirements
+==================================================================================================
+This demo version of geo project is deployed on nginx server 1.7.7 using uwsgi
+You might wish to customize the deployment script or use fabric deployment manager.
+If used with a cloud, plsease refer to your cloud provider specs for using nginx.
+
+Sample uwsgi command:
+cd /geo/geo
+uwsgi --socket :8009 --module geo.wsgi --emperor /etc/uwsgi/vassals --uid root --gid root --master --processes 4 --threads 2 --stats 127.0.0.1:9292 --daemonize=/var/www/vhosts/geo.zrealtycorp.com/logs/uwsg.log
+
+
+This will run master process on port 8009 and span 4 slaves. The logs will be stored in uwsgi.log
+
  
