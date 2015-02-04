@@ -11,6 +11,7 @@ Technologies used:
 ==================================================================================================
 
 
+
 ==================================================================================================
 The demo data 
 ==================================================================================================
@@ -26,11 +27,11 @@ View Live Endpoint output
    * http://geo.zrealtycorp.com/households  
       - for households
    * http://geo.zrealtycorp.com/roadsegments
-      - for roadsegments
+      - for road segments
    * http://geo.zrealtycorp.com/sites
       - for sites
    * http://geo.zrealtycorp.com/serviceareas
-      - for serviceareas
+      - for service areas
 
 ==================================================================================================
 View the relevant docs in
