@@ -5,6 +5,7 @@ Technologies used:
 ==================================================================================================
    * Django 1.7.3
    * Django Rest Framework 2.4.4
+   * Celery
    * Postgis 
    * Postgres
 
