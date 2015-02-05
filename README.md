@@ -23,6 +23,8 @@ Essential third party applications
      - http://www.django-rest-framework.org/
    * Postgis
      - http://postgis.net/
+   * Postgres
+     - www.postgresql.org
 
 ==================================================================================================
 
