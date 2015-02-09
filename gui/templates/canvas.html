@@ -1,0 +1,26 @@
+  {% extends 'layout.html' %}
+  {% load djangular_tags %}
+  {% load url from future %}
+  {% load uni_form_tags %}
+  {% load bootstrap_toolkit %}
+
+{% block title %}Provide Site Info and Threshold{% endblock %}
+
+{% block content %}
+<div id="main-canvas-wrapper">
+      <div id='map-canvas'>Canvas&nbsp;</div>
+      <div id='progress-bar'>Progress Bar&nbsp;</div>
+      <div id='site-info-form'>
+
+      <form name="geo_form"  id="geo-form" ng-submit=""  novalidate>
+          {% csrf_token %}
+          {{ geo_form.as_p }}
+          <input type="hidden" name="contact-valid" id="contact-valid" ng-model='contactvalid' value="{$ invalid $}" />
+          <div class="clearfix"></div>
+          <br/>
+            <button class="btn btn-primary" title="Make a POST request on the Service Area List resource">POST</button>
+      </form>
+
+</div>
+<div class="clearfix"></div>
+{% endblock %}
